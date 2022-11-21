@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1">
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../js/swiper/swiper.min.css"/>
+        <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.css"/>
+        <link rel="stylesheet" href="../css/tqc.css"/>
+        <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <title>Popup_예약번호로확인</title>
+    </head>
+
+    <body>
+        <div class="wrap" id="wrap">
+            <div class="wrap_in">
+                <div class="head">
+                    <div class="head_in">
+                        <h1>
+                            <span>캠핑장이름</span>
+                        </h1>
+                    </div>
+                </div>
+                <!--// head -->
+
+                <div class="container">
+                    <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+
+                    <section class="ci_top_sec">
+
+                        <div class="swiper-container ci_top_swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/dtl_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/camp_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/camp_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                            </ul>
+                            <div class="pagination_com swiper-pagination"></div>
+                        </div>
+
+                        <script>
+
+                            var event_swiper = new Swiper('.ci_top_swiper', {
+                                pagination: {
+                                    el: ".pagination_com",
+                                    clickable: true
+                                },
+                                slidesPerView: '1',
+                                paginationClickable: true,
+                                centeredSlides: true,
+                                lazyLoading: true,
+                                observer: true,
+                                observeParents: true,
+                                loop: false
+                            });
+                        </script>
+
+                        <div class="txt_box">
+                            <div class="tip_set">
+                                <span>2%적립</span>
+                                <span>전자결재</span>
+                                <span>실시간예약</span>
+                                <span>양도가능</span>
+                                <span>빈자리알림</span>
+                            </div>
+
+                            <p class="tit">공주북캠프</p>
+                            <ul class="info_ul">
+                                <li>
+                                    <div class="tel">070-8888-3005</div>
+                                    <a href="tel:070-8888-3005" class="tel_a">통화하기</a>
+                                </li>
+                                <li>
+                                    <div class="addr">
+                                        충남 공주시 신풍면 영정길 155-3
+                                        <br>
+                                        (영정리)
+                                    </div>
+                                    <a href="javascript:copyText('충남 공주시 신풍면 영정길 155-3')" class="copy_a">주소복사</a>
+                                </li>
+                                <li>
+                                    <div class="ex_pri">
+                                        170,000원
+                                    </div>
+                                    <div class="pri">
+                                        110,000원 ~
+                                    </div>
+                                    <div class="like on">
+                                        2,093
+                                    </div>
+                                </li>
+                            </ul>
+                            <script>
+                                function copyText(addr) {
+                                    var tempElem = document.createElement('textarea');
+                                    tempElem.value = addr;
+                                    document
+                                        .body
+                                        .appendChild(tempElem);
+
+                                    tempElem.select();
+                                    document.execCommand("copy");
+                                    document
+                                        .body
+                                        .removeChild(tempElem);
+                                    alert("클립보드에 복사 되었습니다!");
+                                }
+                            </script>
+
+                            <div class="rece_info_div">
+                                최근 한달
+                                <span>2,847명</span>방문&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span>250명</span>이 예약하셨습니다.
+                            </div>
+
+                            <div class="cont_div">
+                                <div class="cont_div_in" style="height:127px">
+                                    <ul>
+                                        <li class="li_EA000 on">
+                                            <span>뷰가 좋아요</span>
+                                        </li>
+                                        <li class="li_EA001 on">
+                                            <span>조용해서 힐링하기 좋아요</span>
+                                        </li>
+                                        <li class="li_EA002 on">
+                                            <span>사진이 잘 나와요</span>
+                                        </li>
+                                        <li class="li_EA003">
+                                            <span>그늘이 많아 해를 피하기 좋아요</span>
+                                        </li>
+                                        <li class="li_EB000">
+                                            <span>반려견과 함께 가기 좋아요
+                                            </span>
+                                        </li>
+                                        <li class="li_EB001">
+                                            <span>아이들과 함께 가기 좋아요</span>
+                                        </li>
+                                        <li class="li_EB002">
+                                            <span>연인과 함께 가기 좋아요</span>
+                                        </li>
+                                        <li class="li_EB003">
+                                            <span>친구들과 함께 가기 좋아요</span>
+                                        </li>
+                                        <li class="li_EC000">
+                                            <span>시설이 잘 관리되어 있어요</span>
+                                        </li>
+                                        <li class="li_EC001">
+                                            <span>시설물이 럭셔리해요</span>
+                                        </li>
+                                        <li class="li_EC002">
+                                            <span>사이트 간격이 넓어요</span>
+                                        </li>
+                                        <li class="li_EC003">
+                                            <span>놀이시설이 많아요</span>
+                                        </li>
+                                        <li class="li_ED000">
+                                            <span>사장님이 친절해요</span>
+                                        </li>
+                                        <li class="li_ED001">
+                                            <span>매너타임이 잘 지켜져요</span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <span class="more_arr">
+                                    <img src="../images/ci_more_arr.png"/>
+                                </span>
+
+                            </div>
+                            <!-- //cont_div -->
+
+                            <script>
+                                $(document).ready(function () {
+                                    $(".cont_div .more_arr").click(function () {
+                                        if (!$(this).hasClass("up")) {
+                                            $(this).addClass("up");
+                                            $(".cont_div .cont_div_in").css("height", "100%");
+                                        } else {
+                                            $(this).removeClass("up");
+                                            $(".cont_div .cont_div_in").css("height", "127px");
+                                        }
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                        <!--// txt_box -->
+
+                    </section>
+                    <!-- ci_top_sec -->
+
+                    <section class="ci_intro_sec">
+                        <div class="com_in">
+                            <div class="sec_title">
+                                <p class="tit">캠핑장 소개</p>
+                            </div>
+
+                            <div class="txt">
+                                별도의 전기난방기구를 가져오실 필요가 없습니다. 여름엔 시원하고 겨울엔 따뜻한 공주 북캠프 입니다.
+                                <br><br>
+
+                                글램핑 14동,소형펜션 1동,중형펜션 3동, 대형펜션 6동과 부대시설,단체 조리시설,별도의 공용 세척실,샤워시설,화장실을 운영하고 있고 미디어
+                                라이프에 불편함이 없도록 KT IP-TV와 무료 WIFI 망이 구축되어 있습니다.<br><br>
+
+                                글램핑 14동,소형펜션 1동,중형펜션 3동, 대형펜션 6동과 부대시설,단체 조리시설,별도의 공용 세척실,샤워시설,화장실을 운영하고 있고 미디어
+                                라이프에 불편함이 없도록 KT IP-TV와 무료 WIFI 망이 구축되어 있습니다.별도의 전기난방기구를 가져오실 필요가 없습니다. 여름엔 시원하고
+                                겨울엔 따뜻한 공주 북캠프 입니다.
+                                <br>
+                                글램핑 14동,소형펜션 1동,중형펜션 3동, 대형펜션 6동과 부대시설,단체 조리시설,별도의 공용 세척실,샤워시설,화장실을 운영하고 있고 미디어
+                                라이프에 불편함이 없도록 KT IP-TV와 무료 WIFI 망이 구축되어 있습니다.<br><br>
+
+                                글램핑 14동,소형펜션 1동,중형펜션 3동, 대형펜션 6동과 부대시설,단체 조리시설,별도의 공용 세척실,샤워시설,화장실을 운영하고 있고 미디어
+                                라이프에 불편함이 없도록 KT IP-TV와 무료 WIFI 망이 구축되어 있습니다.<br><br>
+                            </div>
+
+                            <button class="btn_ci_more">더보기</button>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                $(".ci_intro_sec .btn_ci_more").click(function () {
+                                    if (!$(this).hasClass("up")) {
+                                        $(this).addClass("up");
+                                        $(this).text('접기');
+                                        $(".ci_intro_sec .txt").css("maxHeight", "100%");
+                                    } else {
+                                        $(this).removeClass("up");
+                                        $(".ci_intro_sec .txt").css("maxHeight", "222px");
+                                        $(this).text('더보기');
+                                    }
+                                });
+                            });
+                        </script>
+
+                    </section>
+                    <!-- // ci_intro_sec -->
+
+                    <section class="use_info_sec">
+                        <div class="com_in">
+                            <div class="sec_title">
+                                <p class="tit">이용안내</p>
+                            </div>
+
+                            <div class="basic_info">
+                                <div class="so_title">
+                                    <p class="tit">기본정보</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>관련 사이트</dt>
+                                            <dd>
+                                                <a href="http://gongjubookcamp.co.kr">http://gongjubookcamp.co.kr</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>예약 안내</dt>
+                                            <dd>지면 방식 : 파쇄석, 데크, 잔디</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>주차 안내</dt>
+                                            <dd>사이트옆 주차</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //basic_info -->
+
+                            <div class="dtl_info">
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>운영형태</dt>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use01.png"/>
+                                                </div>
+                                                <div class="txt">오토캠핑</div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>편의시설</dt>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use02.png"/>
+                                                </div>
+                                                <div class="txt">매점</div>
+                                            </dd>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use03.png"/>
+                                                </div>
+                                                <div class="txt">카페</div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>이용가능</dt>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use04.png"/>
+                                                </div>
+                                                <div class="txt">산책로</div>
+                                            </dd>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use05.png"/>
+                                                </div>
+                                                <div class="txt">반려동물</div>
+                                            </dd>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use06.png"/>
+                                                </div>
+                                                <div class="txt">공용화장실</div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>레져</dt>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use07.png"/>
+                                                </div>
+                                                <div class="txt">등산</div>
+                                            </dd>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use08.png"/>
+                                                </div>
+                                                <div class="txt">수상레져</div>
+                                            </dd>
+                                            <dd>
+                                                <div class="pic">
+                                                    <img src="../images/ico_use09.png"/>
+                                                </div>
+                                                <div class="txt">MTB</div>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- //dtl_info -->
+
+                            <div class="res_info">
+                                <div class="so_title">
+                                    <p class="tit">예약정보</p>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <dl>
+                                            <dt>예약가능일자</dt>
+                                            <dd>~ 2022.03.31 (다음달로부터 2개월 까지)</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>예약오픈일</dt>
+                                            <dd>매월 1일 10시 오픈
+                                                <br>
+                                                · 2022년 03월 02일 13시이후 최대 2022년 05월 31일까지 예약가능)<br>
+                                                · 2022년 04월 02일 13시이후 최대 2022년 06월 30일까지 예약가능)<br>
+                                                · 2022년 05월 02일 13시이후 최대 2022년 07월 31일까지 예약가능)</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>예약가능일수</dt>
+                                            <dd>6박7일</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>예약가능사이트수</dt>
+                                            <dd>최대 3개사이트</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>최성수기</dt>
+                                            <dd>07.22 ~ 08.15</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>준성수기</dt>
+                                            <dd>08.16 ~ 11.30, 03.01 ~ 07.21</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //res_info -->
+
+                            <div class="time_info">
+                                <div class="so_title">
+                                    <p class="tit">이용시간 안내</p>
+                                </div>
+
+                                <div class="time_div og">
+                                    <div class="tit">입퇴실시간</div>
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>입실</dt>
+                                                <dd>13:00</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>퇴실</dt>
+                                                <dd>11:00</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="time_div mt">
+                                    <div class="tit">매너타임</div>
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>시작</dt>
+                                                <dd>22:00</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>종료</dt>
+                                                <dd>07:00</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- //time_info -->
+
+                            <div class="map_info">
+                                <div class="so_title">
+                                    <p class="tit">약도</p>
+                                </div>
+
+                                <div class="map" style="height:180px;width: 100%;">
+                                    약도api
+
+                                </div>
+
+                            </div>
+                            <!-- //map_info -->
+
+                            <div class="arg_info">
+                                <div class="so_title">
+                                    <p class="tit">배치도</p>
+                                    <button class="btn_bigview">크게보기</button>
+                                </div>
+
+                                <div class="pic">
+                                    <img src="../images/temp/arg_temp01.png"/>
+
+                                </div>
+
+                            </div>
+                            <!-- //map_info -->
+                        </div>
+                    </section>
+                    <!-- //use_info_sec -->
+
+                    <section class="site_dtl_sec">
+                        <div class="com_in">
+                            <div class="sec_title">
+                                <p class="tit">사이트 상세</p>
+                            </div>
+
+                            <div>
+                                jquery-ui 달력
+
+                            </div>
+                            <div class="view_date">
+                                <div class="slt_date">
+                                    <div class="gubunBox">
+                                        <span class="slt_gubun">입실</span>
+                                        <div class="gubunTxtBox">
+                                            <span class="slt_gubun_txt"></span>
+                                        </div>
+                                    </div>
+                                    <em>~</em>
+                                    <div class="gubunBox">
+                                        <span class="slt_gubun">퇴실</span>
+                                        <div class="selwp2">
+                                            <select
+                                                id="sel_res_days"
+                                                name="sel_res_days"
+                                                onchange="chgResDays(this.value);"></select>
+                                            <span class="slt_txt coR1">변경</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span id="spanClock" class="crt_clock"></span>
+                                <span
+                                    id="spanRefresh"
+                                    class="crt_refresh"
+                                    style="display: none;"
+                                    onclick="goCalendarRefresh();"><img class="img_refresh" src="/images/ico_refresh.png" alt="새로고침">날짜 새로고침</span>
+                            </div>
+
+                            <div class="site_list" style="max-height:492px">
+                                <ul>
+                                    <li>
+                                    <li>
+                                        <div class="site_div">
+                                            <div class="left_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/site_temp01.png" alt="">
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="txt">예약가능
+                                                        <span>99</span>자리</p>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <p class="tit">[세미캠핑장 A] (에어컨/냉장고/더블 배드1개, 바닥 매트리스 1개)</p>
+                                                <ul class="dtl_site_ul ul2">
+                                                    <!-- 페션 두개일 경우 클래스 ul2추가-->
+                                                    <li class="camp">펜션</li>
+                                                    <li class="dk">데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m)</li>
+                                                </ul>
+                                                <p class="pri">45,000원</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="site_div">
+                                            <div class="left_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/site_temp01.png" alt="">
+                                                </div>
+                                                <div class="txt_area">
+                                                    <button class="btn_alarm">빈 자 리<br>알림신청</button>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <p class="tit">[세미캠핑장 A] (에어컨/냉장고/더블 배드1개, 바닥 매트리스 1개) (에어컨/냉장고/더블 배드1개, 바닥 매트리스 1개)</p>
+                                                <ul class="dtl_site_ul">
+                                                    <li class="camp">오토캠핑</li>
+                                                    <li class="park">사이드주차</li>
+                                                    <li class="dk">데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m) 데크(8.5m X 4.2m)</li>
+                                                    <li class="ele">전기사용</li>
+                                                </ul>
+                                                <p class="pri">45,000원</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="site_div disabled">
+                                            <div class="left_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/site_temp01.png" alt="">
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="txt">예약불가</p>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <p class="tit">[세미캠핑장 A] (에어컨/냉장고/더블 배드1개, 바닥 매트리스 1개)</p>
+                                                <ul class="dtl_site_ul">
+                                                    <li class="camp">오토캠핑</li>
+                                                    <li class="park">사이드주차</li>
+                                                    <li class="dk">데크(8.5m X 4.2m)</li>
+                                                    <li class="ele">전기사용</li>
+                                                </ul>
+                                                <p class="pri">45,000원</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="site_div disabled">
+                                            <div class="left_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/site_temp01.png" alt="">
+                                                </div>
+                                                <div class="txt_area">
+                                                    <p class="txt">예약완료</p>
+                                                </div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <p class="tit">[세미캠핑장 A] (에어컨/냉장고/더블 배드1개, 바닥 매트리스 1개)</p>
+                                                <ul class="dtl_site_ul">
+                                                    <li class="camp">오토캠핑</li>
+                                                    <li class="park">사이드주차</li>
+                                                    <li class="dk">데크(8.5m X 4.2m)</li>
+                                                    <li class="ele">전기사용</li>
+                                                </ul>
+                                                <p class="pri">45,000원</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- //site_list -->
+                            <button class="btn_ci_more">더보기</button>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $(".site_dtl_sec .btn_ci_more").click(function () {
+                                        if (!$(this).hasClass("up")) {
+                                            $(this).addClass("up");
+                                            $(this).text('접기');
+                                            $(".site_list").css("maxHeight", "100%");
+                                        } else {
+                                            $(this).removeClass("up");
+                                            $(".site_list").css("maxHeight", "492px");
+                                            $(this).text('더보기');
+                                        }
+                                    });
+                                });
+                            </script>
+
+                        </div>
+                    </section>
+                    <!-- //site_dtl_sec -->
+
+                    <section class="real_review_sec">
+                        <div class="com_in">
+                            <div class="sec_title jc_sb">
+                                <p class="tit">리얼후기</p>
+                                <a href="#n" class="more">더보기</a>
+                            </div>
+
+                            <div class="rrv_list">
+                                <ul>
+                                    <li>
+                                        <div class="rrv_div">
+                                            <div class="pic_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/img_temp02.png" alt="">
+                                                </div>
+                                                <div class="score">5.0</div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <div class="top_div">
+                                                    <p class="na">목동69</p>
+                                                    <p class="date">2021-12-29</p>
+                                                </div>
+                                                <div class="txt">
+                                                    [방문후기] 영하18도 너무 추웠지만 크리스마스 자연 속에서 잘 보내고 왔어요 ~^^
+                                                    <img src="../images/temp/rrv_temp01.png" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="rrv_div">
+                                            <div class="pic_div">
+                                                <div class="pic">
+                                                    <img src="../images/temp/img_temp02.png" alt="">
+                                                </div>
+                                                <div class="score">5.0</div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <div class="top_div">
+                                                    <p class="na">목동69</p>
+                                                    <p class="date">2021-12-29</p>
+                                                </div>
+                                                <div class="txt">
+                                                    [방문후기] 영하18도 너무 추웠지만 크리스마스 자연 속에서 잘 보내고 왔어요 ~^^
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="rrv_div">
+                                            <div class="pic_div">
+                                                <div class="pic"></div>
+                                                <div class="score">4.0</div>
+                                            </div>
+                                            <div class="txt_box">
+                                                <div class="top_div">
+                                                    <p class="na">캠캠퍼</p>
+                                                    <p class="date">2021-12-29</p>
+                                                </div>
+                                                <div class="txt">
+                                                    [방문후기] 영하18도 너무 추웠지만 크리스마스 자연 속에서 잘 보내고 왔어요 ~^^
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class="btn_ci_write">한줄평 등록</button>
+                        </div>
+
+                    </section>
+                    <!-- //real_review_sec -->
+
+                    <section class="real_photo_sec">
+                        <div class="com_in">
+                            <div class="sec_title jc_sb">
+                                <p class="tit">리얼 캠장 사진</p>
+                                <a href="#n" class="more">더보기</a>
+                            </div>
+
+                            <div class="swiper-container rp_swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="pic">
+                                                <img src="../images/temp/rrv_temp01.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#n">
+                                            <div class="pic">
+                                                <img src="../images/temp/rrv_temp02.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <script>
+                                var rp_swiper = new Swiper('.rp_swiper', {
+                                    pagination: false,
+                                    slidesPerView: 'auto',
+                                    paginationClickable: true,
+                                    spaceBetween: 13,
+                                    freeMode: true,
+                                    lazyLoading: true,
+                                    observer: true,
+                                    observeParents: true,
+                                    loop: false
+                                });
+                            </script>
+
+                            <button class="btn_ci_photo">사진등록</button>
+
+                        </div>
+                    </section>
+                    <!-- //real_photo_sec -->
+
+                    <!--↑↑↑↑↑↑ 컨텐츠 끝 *******************↑↑↑↑↑↑↑↑↑ -->
+                </div>
+                <!--// container -->
+
+                <div class="footer">
+
+                    <div class="foot_top">
+                        <p class="tit">캠핑장이름</p>
+                        <ul class="ft_ul">
+                            <li>
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>0504-2016-1707</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>인천 강화군 화도면 해안남로 1998 (흥왕리) 8-28</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <p class="txt">
+                            하비비커뮤니케이션은 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게
+                            있습니다.
+                            <span>
+                                <em>예약관리(입금확인/취소/변경/환불)</em>에 대한 문의는 [강화 오크힐글램핑]으로 해주시기 바랍니다.</span>
+                        </p>
+                        <a href="tel:0504-2016-1707" class="btn_call">통화하기</a>
+                    </div>
+                    <div class="foot_btm type2">
+                        <p class="tit">주식회사 하비비커뮤니케이션 - 예약시스템제공</p>
+                        <ul class="fb_ul">
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>서울특별시 마포구 연남로 45, 3층(연남동)</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>대표자</dt>
+                                    <dd>강동구</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>사업자번호</dt>
+                                    <dd>752-88-01786</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>통신판매번호</dt>
+                                    <dd>제2020-서울마포-3249호</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>02-6959-5622</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>이메일주소</dt>
+                                    <dd>camperstory@naver.com</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //foot_btm -->
+
+                </div>
+                <!-- //footer -->
+
+                <div class="btm_foot">
+                    <div class="btn_set type3">
+                        <ul>
+                            <li>
+                                <button class="btn_share">
+                                    <span></span></button>
+                            </li>
+                            <li class="btn_wp">
+                                <button class="btn_long type2">
+                                    <span>장박예약</span></button>
+                                <button class="btn_food type2">
+                                    <span>먹거리구매</span></button>
+                                <button class="btn_res">
+                                    <span>예약확인</span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //btm_foot -->
+                <div class="pop_wp">
+                    <div class="pop_layer_set pop_res_set on" id="pop_date_sel">
+                        <div class="pop_layer recent_layer">
+                            <div class="pop_top">
+                                예약 신청내역 확인
+                                <span class="btn_close"></span>
+                            </div>
+                            <div class="pop_con on">
+                                <p>예약번호와 예약자명을 입력해 주세요.</p>
+                                <ul class="lst_pop">
+                                    <li>
+                                        <label for="" class="tit">예약번호</label>
+                                        <input type="text" class="inp_txt" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="" class="tit">예약자명</label>
+                                        <input type="text" class="inp_txt" name="" id="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pop_con">
+                                <p>예약번호와 예약자명을 입력해 주세요.</p>
+                                <ul class="lst_pop">
+                                    <li>
+                                        <label for="" class="tit">예약자명</label>
+                                        <input type="text" class="inp_txt" name="" id="">
+                                    </li>
+                                    <li class="dp_ib">
+                                        <label for="" class="tit">휴대폰번호</label>
+                                        <input type="text" class="inp_txt txt_phone" name="" id="">
+                                        <button type="button" class="btn_cof">인증번호발송</button>
+                                    </li>
+                                    <li>
+                                        <label for="" class="tit">인증번호</label>
+                                        <input type="text" class="inp_txt" name="" id="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pop_btn">
+                                <button class="btn_res" type="button">예약내역확인</button>
+                                <button class="btn_phone" type="button">
+                                    <em>휴대폰번호</em>로 확인하기</button>
+                            </div>
+                        </div>
+                        <div class="modal" style="display:block"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //wrap_in -->
+
+        </div>
+        <!--// wrap -->
+    </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1"/>
+        <link rel="shortcut icon" href="../images/favicon.ico"/>
+        <link rel="stylesheet" href="../js/swiper/swiper.min.css"/>
+        <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.css"/>
+        <link rel="stylesheet" href="../css/tqc.css"/>
+        <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/common.js"></script>
+        <section src="../js/tqc.js"></script>
+        <title>사이트정보_선착순</title>
+    </head>
+
+    <body>
+        <div class="wrap" id="wrap">
+            <div class="wrap_in">
+                <div class="head">
+                    <div class="head_in">
+                        <h1>
+                            <span>캠핑장이름</span>
+                        </h1>
+                    </div>
+                </div>
+                <!--// head -->
+
+                <div class="container">
+                    <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+                    <section class="ci_top_sec">
+
+                        <div class="swiper-container ci_top_swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/dtl_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/camp_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="#n">
+                                        <img src="../images/temp/camp_temp01.png"/>
+                                    </a>
+                                    <p class="info_txt"><span>공주북캠프 글램핑 야경</span></p>
+                                </li>
+                            </ul>
+                            <div class="pagination_com swiper-pagination"></div>
+                        </div>
+						<div class="camp_div">
+							<div class="txt_box">
+								<strong class="tit">A사이트</strong>
+								<p class="txt">파쇄석 (6m X 11m)</p>
+							</div>
+							<div class="site_info">
+								<dl>
+									<dt class="day1">주말금액</dt>
+									<dd class="day_txt">1박 - 50,000원 / 연박 - 45,000원</dd>
+								</dl>
+								<dl>
+									<dt class="day2">평일금액</dt>
+									<dd class="day_txt">1박 - 50,000원 / 연박 - 45,000원</dd>
+								</dl>
+							</div>
+						</div>
+					</section>
+					<script>
+						var event_swiper = new Swiper('.ci_top_swiper', {
+							pagination: {
+								el: ".pagination_com",
+								clickable: true
+							},
+							slidesPerView: '1',
+							paginationClickable: true,
+							centeredSlides: true,
+							lazyLoading: true,
+							observer: true,
+							observeParents: true,
+							loop: false
+						});
+					</script>
+					<!-- //camp_div -->
+							
+					<section class="bar_sort">
+						<div class="sec_title">
+							<h3 class="tit">이용안내</h3>
+						</div>
+						<div class="info_div">
+                            <dl>
+                                <dt>특징</dt>
+                                <dd>파쇄석(6m X 11m)</dd>
+                            </dl>
+                            <dl>
+                                <dt>정보</dt>
+                                <dd>사이드주차, 전기사용, 자리지정예약</dd>
+                            </dl>
+                            <dl>
+                                <dt>최대 예약가능수</dt>
+                                <dd>1개</dd>
+                            </dl>
+                            <dl>
+                                <dt>기준인원</dt>
+                                <dd>
+                                    총 4명(성인 2명, 만 12세 미만 소인 2명)
+                                    최대인원 : 6명
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>기준차량</dt>
+                                <dd>총 1대</dd>
+                            </dl>
+                            <dl class="line">
+                                <dt>인원초과요금</dt>
+                                <dd>비수기 : 성인초과 5,000원 / 소인초과 5,000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>입/퇴실 시간</dt>
+                                <dd>입실시간 15:00 / 퇴실시간 11:00</dd>
+                            </dl>
+                        </div>
+					</section>
+					<!-- //info_div -->
+
+                    <section class="bar_sort">
+                        <div class="sec_title">
+                            <h3 class="tit">예약정보</h3>
+                        </div>
+                        <div class="res_div">
+                            <p class="chk_txt">산택 사이트(객실) : <span>1</span></p>
+                            <div class="date_btn">
+                                <button type="button" class="inp_txt">11.03(목) ~ 11.05(토) / 2박</button>
+                                <a href="#n">변경</a>
+                            </div>
+                            <div class="count_div">
+                                <p>예약수량</p>
+                                <div class="count_box">
+                                    <div class="count mb0">
+                                        <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                        <span><input type="number" value="1"></span>
+                                        <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="count_div">
+                                <p>예약인원</p>
+                                <div class="count_box">
+                                    <div class="count">
+                                        <p>성인(만19세 이상)</p>
+                                        <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                        <span><input type="number" value="2"></span>
+                                        <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                    </div>
+                                    <div class="count">
+                                        <p>소인(만12세 미만)</p>
+                                        <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                        <span><input type="number" value="1"></span>
+                                        <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="count_div">
+                                <p>예약차량</p>
+                                <div class="count_box">
+                                    <div class="count mb0">
+                                        <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                        <span><input type="number" value="1"></span>
+                                        <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+					<!-- //res_div -->
+
+                    <section class="bar_sort">
+                        <div class="sec_title">
+                            <h3 class="tit">추가선택</h3>
+                        </div>
+                        <div class="add_div">
+                            <div class="count_div">
+                                <p class="txt">반려견 포함(10kg미만 소형견)(x박수)</p>
+                                <div class="count_box">
+                                    <div class="count">
+                                        <p>+ <em>15,000</em>원</p>
+                                        <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                        <span><input type="number" value="1"></span>
+                                        <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+
+                    <section class="bar_sort">
+                        <div class="sec_title">
+                            <h3 class="tit">먹거리 선택</h3>
+                        </div>
+                        <div class="food_div">
+                            <ul class="lst_food">
+                                <li class="fd_box">
+                                    <div class="fd_box_item clear">
+                                        <div class="pic"><img src="/images/temp/food_temp01.png" alt=""></div>
+                                        <div class="txt_box">
+                                            <p class="tit">[인기상품]국물쫄볶이</p>
+                                            <p class="txt">안먹어본 캠퍼는 있어도 한번만 먹어본캠퍼는 없다!</p>
+                                        </div>
+                                        <a href="#n" class="more_a">상세보기</a>
+                                    </div>
+                                    <div class="count_box">
+                                        <div class="count">
+                                            <p class="pri">+ <em>9,400</em>원</p>
+                                            <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                            <span><input type="number" value="1"></span>
+                                            <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fd_box">
+                                    <div class="fd_box_item clear">
+                                        <div class="pic"><img src="/images/temp/food_temp01.png" alt=""></div>
+                                        <div class="txt_box">
+                                            <p class="tit">[인기상품]국물쫄볶이</p>
+                                            <p class="txt">안먹어본 캠퍼는 있어도 한번만 먹어본캠퍼는 없다!</p>
+                                        </div>
+                                        <a href="#n" class="more_a">상세보기</a>
+                                    </div>
+                                    <div class="count_box">
+                                        <div class="count">
+                                            <p class="pri">+ <em>9,400</em>원</p>
+                                            <a href="#n" class="minus"><img src="/images/count_minus.png" alt=""></a>
+                                            <span><input type="number" value="1"></span>
+                                            <a href="#n" class="plus"><img src="/images/count_plus.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn_more">더보기</button>
+                        </div>
+                    </section>
+                    <!-- //food_div -->
+
+
+                    <button
+                        type="button"
+                        id="BtnAdd"
+                        class="link_fixdfull"
+                        onclick="SavResLongAdd();">실시간 예약신청
+                    </button>
+                    
+                    <!--↑↑↑↑↑↑ 컨텐츠 끝 *******************↑↑↑↑↑↑↑↑↑ -->
+                </div>
+                <!--// container -->
+            <!-- //wrap_in -->
+        </div>
+        <!--// wrap -->
+    </body>
+</html>

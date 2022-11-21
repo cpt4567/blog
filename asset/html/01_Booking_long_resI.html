@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../js/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.css"/>
+    <link rel="stylesheet" href="../css/tqc.css"/>
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <title>장박신청하기</title>
+  </head>
+
+  <body>
+    <div class="wrap" id="wrap">
+      <div class="wrap_in">
+        <div class="head">
+          <div class="head_in">
+            <h1>
+              <span>캠핑장이름</span>
+            </h1>
+          </div>
+        </div>
+        <!--// head -->
+
+        <div class="container">
+          <!--↓↓↓↓↓↓ 컨텐츠 시작 ↓↓↓↓↓↓-->
+          <div class="com_title">
+            <h2 class="tit">장박신청하기</h2>
+          </div>
+
+          <section class="res_info_sec">
+            <div class="res_pay_area">
+              <ul>
+                <li>
+                  <label for="name" class="tit">예약자명</label>
+                  <input type="text" placeholder="홍길동" value="" class="inp_txt">
+                </li>
+                <li>
+                  <label for="tel" class="tit">연락처<span> (필수)</span></label>
+                  <div class="tel_area">
+                    <input type="tel" pattern="[0-9]*" name="ord_h_telno1" id="ord_h_telno1" class="inp_txt" placeholder="010" aria-label="전화번호 앞 4자리" maxlength="4" value="" />
+                    <span class="bar"></span>
+                    <input type="tel" pattern="[0-9]*" name="ord_h_telno2" id="ord_h_telno2" class="inp_txt" placeholder="1234" aria-label="전화번호 중간 4자리" maxlength="4" value="" />
+                    <span class="bar"></span>
+                    <input type="tel" pattern="[0-9]*" name="ord_h_telno3" id="ord_h_telno3" class="inp_txt" placeholder="5678" aria-label="전화번호 끝 4자리" maxlength="4" value="" />
+                  </div>
+                </li>
+                <li class="info_div type2">
+                  <dl>
+                    <dt>장박이용기간</dt>
+                    <dd>2022.12.01 ~ 2023.02.28</dd>
+                  </dl>
+                  <dl>
+                    <dt>장박정보</dt>
+                    <dd>캠지기 상주 / 평일캠 가능</dd>
+                  </dl>
+                  <dl>
+                    <dt>장박혜택</dt>
+                    <dd>캠핑장 15분 거리에 비발디파크가 있어서 겨울철 아이들과 스키, 눈썰매를 이용하실 수 있습니다.
+                      <br><br>
+                      환불은 불가합니다.</dd>
+                  </dl>
+                </li>
+                <li>
+                  <label for="date" class="tit">신청기간</label>
+                  <ul class="lst_check_period">
+                    <li>
+                      <input type="radio" id="period_num1" name="period_num">
+                      <label for="period_num1">1개월</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="period_num2" name="period_num">
+                      <label for="period_num2">2개월</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="period_num3" name="period_num">
+                      <label for="period_num3">3개월</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="day" class="tit">신청일자</label>
+                  <div class="date_div">
+                    <input type="text" class="inp_txt date_prev" value="2022.12.01">
+                    <span>-</span>
+                    <input type="text" class="inp_txt">
+                  </div>
+                </li>
+                <li>
+
+                  <label class="tit">신청사이트</label>
+                  <ul class="lst_check_site">
+                    <li>
+                      <input type="radio" id="site_num1" name="site_num">
+                      <label for="site_num1">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">1</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num2" name="site_num">
+                      <label for="site_num2">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">2</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num3" name="site_num">
+                      <label for="site_num3">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">3</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num4" name="site_num">
+                      <label for="site_num4">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">4</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num5" name="site_num">
+                      <label for="site_num5">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">5</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num6" name="site_num">
+                      <label for="site_num6">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">6</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num7" name="site_num">
+                      <label for="site_num7">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">7</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="radio" id="site_num8" name="site_num">
+                      <label for="site_num8">
+                        <span class="ico_chk"></span>
+                        <span class="iptxt">8</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <label for="tel" class="tit">요창사항</label>
+                  <div class="tel_area">
+                    <input type="text" id="rec_rmk" name="rec_rmk" placeholder="내용을 입력해 주세요." class="inp_txt">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- //예약정보 -->
+
+          <section class="bar_sort">
+            <div class="sec_title">
+							<h3 class="tit">결제금액<span class="txt">(부가세포함)</span></h3>
+						</div>
+            <div class="info_div">
+              <div class="total_div type2">
+                <p class="tit">총 결제금액</p>
+                <p class="price">50,000<span>원</span></p>
+              </div>
+              <ul class="lst_txt type2">
+                <li><span>2022.11.18 23:59:59</span>까지 결제(입금)되지 않으면자동으로 예약취소 됩니다</li>
+              </ul>
+            </div>
+          </section>
+          <!-- //결제금액 -->
+
+          <section class="bar_sort">
+            <div class="sec_title">
+							<h3 class="tit">결제방법 선택</h3>
+						</div>
+            <div class="res_pay_area">
+              <ul class="pay_list">
+                <li>
+                  <input type="radio" name="pay" id="payMode1">
+                  <label for="payMode1">신용카드</label>
+                </li>
+                <li>
+                  <input type="radio" name="pay" id="payMode2">
+                  <label for="payMode2">가상계좌</label>
+                </li>
+                <li>
+                  <input type="radio" name="pay" id="payMode3">
+                  <label for="payMode3">무통장</label>
+                </li>
+              </ul>
+            </div>
+            <div id="divVBank" class="order_delivery">
+              <h2 class="tp2">가상계좌입금정보</h2>
+              <div class="delivery_form">
+                <dl>
+                  <dt class="last" style="padding-top:10px;">입금은행</dt>
+                  <dd>
+                    <div class="selwp whf tp2" id="ref_code">
+                      <select name="VbankBankCode" class="inp_txt">
+                        <option value="003">기업은행 (00:30~23:30)</option>
+                        <option value="004">국민은행 (00:30~23:30)</option>
+                        <option value="005">외한은행 (01:00~22:45)</option>
+                        <option value="011">농협중앙회 (00:30~23:30)</option>
+                        <option value="020">우리은행 (00:30~23:30)</option>
+                        <option value="081">하나은행 (00:30~23:30)</option>
+                        <option value="088">신한은행 (00:30~23:30)</option>
+                        <option value="031">대구은행 (08:00~23:00)</option>
+                        <option value="032">부산은행 (00:30~23:30)</option>
+                      </select>
+                      <i class="fa fa-angle-down slt_arw" aria-hidden="true"></i>
+                    </div>
+                  </dd>
+                  <dt class="last" style="padding-top:10px;">현금영수증</dt>
+                  <dd>
+                    <div class="receipt_div clear">
+                      <div class="receipt_type" style="float:left;">
+                        <input type="radio" id="ReceiptType1" name="ReceiptType" value="1">
+                        <label for="ReceiptType1">
+                          <span class="ico_chk"></span>
+                          <span class="iptxt">소득공제용</span>
+                        </label>
+                      </div>
+                      <div class="receipt_type">
+                        <input type="radio" id="ReceiptType2" name="ReceiptType" value="2" >
+                        <label for="ReceiptType2">
+                          <span class="ico_chk"></span>
+                          <span class="iptxt">지출증빙용</span>
+                        </label>
+                      </div>
+                      <div class="receipt_type">
+                        <input type="radio" id="ReceiptType0" name="ReceiptType" value="0" >
+                        <label for="ReceiptType0">
+                          <span class="ico_chk"></span>
+                          <span class="iptxt">미발행</span>
+                        </label>
+                      </div>
+                    </div>
+                  </dd>
+                  <div class="ReceiptInput">
+                    <dt class="last"></dt>
+                    <dd>
+                      <input type="hidden" name="ReceiptTypeNo">
+                      <input id="ReceiptTypeNo1" class="inp_dv inp_txt" type="text" placeholder="휴대폰번호를 입력하여 주십시오.">
+                      <input id="ReceiptTypeNo2" class="inp_dv inp_txt" type="text" placeholder="사업자번호를 입력하여 주십시오.">
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>      
+          </section>
+          <!-- //결제방법 -->
+
+          <section class="bar_sort">
+            <div class="sec_title jc_sb">
+							<h3 class="tit">약관동의</h3>
+              <button type="button">전체동의</button>
+						</div>
+            <div class="res_pay_area">
+              <div class="agree_box">
+                <ul class="clear">
+                  <li>
+                    <input type="checkbox" id="agr2">
+                    <label for="agr2">개인정보 수집 및 이용 동의<span>(필수)</span></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="agr3">
+                    <label for="agr3">개인정보 제3자 제동 동의<span>(필수)</span></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- //약관동의 -->
+
+          <button
+            type="button"
+            id="BtnAdd"
+            class="link_fixdfull"
+            onclick="SavResLongAdd();">예약하기
+          </button>
+
+        <!--↑↑↑↑↑↑ 컨텐츠 끝 *******************↑↑↑↑↑↑↑↑↑ -->
+        </div>
+        <!--// container -->
+
+      </div>
+      <!-- //wrap_in -->
+
+    </div>
+    <!--// wrap -->
+  </body>
+</html>
