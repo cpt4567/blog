@@ -4,11 +4,6 @@ const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack(config) {
-    config.resolve.modules.push(__dirname);
-    return config;
-  } /* 웹팩 부가 설정 */,
-
   reactStrictMode: true,
   swcMinify: true,
   // eslint: {
@@ -17,9 +12,11 @@ const nextConfig = {
   env: {
     BASE_URL: process.env.BASE_URL,
   },
-  // compiler: {
-  //   removeConsole: process.env.NODE_ENV === 'production',
-  // },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
+  },
   async redirects() {
     return [
       {
